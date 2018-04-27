@@ -69,7 +69,7 @@ galaxy_info:
   license:  GPLv2,CC-BY
   min_ansible_version: 1.2
   platforms:
-   - name: centos
+   - name: EL
      versions:
       - 7
   galaxy_tags: [elastic-search,ansible-elastic]
