@@ -1,5 +1,6 @@
+---
 galaxy_info:
-  - author: ravali,
+    author: "ravali"
     description: elasticsearch role
     company: polyglot
 
