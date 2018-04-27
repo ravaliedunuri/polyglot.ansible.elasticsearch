@@ -1,0 +1,17 @@
+---
+- name: create elastic repo
+  copy: src=elastic.repo dest=/etc/yum.repos.d/elastic.repo
+
+- name: install elasticsearch
+  package: name=elasticsearch state=present
+
+- name: copy conf file
+  template: src=elasticsearch.yml.j2 dest=/etc/elasticsearch/
+
+#- name: start and enable service in centos 7
+#  service: name=elasticsearch state=started enabled=yes
+
+- name: start the service in centos 6
+  service: name=elasticsearch state=started
+  
+

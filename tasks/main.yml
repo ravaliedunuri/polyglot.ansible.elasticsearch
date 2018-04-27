@@ -1,0 +1,4 @@
+---
+# tasks file for polyglot-ansible-elasticsearch
+- name: import tasks
+  nclude: package.yml 
